@@ -1,0 +1,96 @@
+name: Performance Benchmarks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    name: Cross-Language Benchmarks
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+      with:
+        toolchain: stable
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Install benchmarking tools
+      run: |
+        cargo install cargo-criterion || true
+        go install golang.org/x/perf/cmd/benchstat@latest
+
+    - name: Run Rust benchmarks
+      run: |
+        echo "=== Rust Benchmarks ===" >> benchmark_results.txt
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Benchmarking $dir" >> benchmark_results.txt
+            cd "$dir"
+            cargo bench --no-fail-fast >> ../../benchmark_results.txt 2>&1 || true
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Run Go benchmarks
+      run: |
+        echo "" >> benchmark_results.txt
+        echo "=== Go Benchmarks ===" >> benchmark_results.txt
+        for dir in go/examples/*/; do
+          if [ -f "$dir"/*_test.go ]; then
+            echo "Benchmarking $dir" >> benchmark_results.txt
+            cd "$dir"
+            go test -bench=. -benchmem >> ../../benchmark_results.txt 2>&1 || true
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Run Java benchmarks (JMH)
+      run: |
+        echo "" >> benchmark_results.txt
+        echo "=== Java Benchmarks ===" >> benchmark_results.txt
+        for dir in java/examples/*/; do
+          if [ -f "$dir/pom.xml" ]; then
+            echo "Benchmarking $dir" >> benchmark_results.txt
+            cd "$dir"
+            mvn clean install >> ../../benchmark_results.txt 2>&1 || true
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark-results
+        path: benchmark_results.txt
+
+    - name: Comment benchmark results on PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const results = fs.readFileSync('benchmark_results.txt', 'utf8');
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '## Benchmark Results\n\n```\n' + results + '\n```'
+          });

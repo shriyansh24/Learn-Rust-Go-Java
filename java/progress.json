@@ -1,0 +1,316 @@
+{
+  "language": "Java",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-15",
+  "categories": [
+    {
+      "name": "Fundamentals",
+      "lessons": [
+        {
+          "id": "01-hello-world",
+          "title": "Hello World",
+          "completed": false,
+          "estimatedTime": "20 minutes"
+        },
+        {
+          "id": "02-variables",
+          "title": "Variables and Data Types",
+          "completed": false,
+          "estimatedTime": "45 minutes"
+        },
+        {
+          "id": "03-operators",
+          "title": "Operators",
+          "completed": false,
+          "estimatedTime": "30 minutes"
+        },
+        {
+          "id": "04-control-flow",
+          "title": "Control Flow",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "05-methods",
+          "title": "Methods",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Object-Oriented Programming",
+      "lessons": [
+        {
+          "id": "06-classes-objects",
+          "title": "Classes and Objects",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "07-inheritance",
+          "title": "Inheritance",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "08-polymorphism",
+          "title": "Polymorphism",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "09-encapsulation",
+          "title": "Encapsulation",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "10-abstraction",
+          "title": "Abstract Classes and Interfaces",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "Collections Framework",
+      "lessons": [
+        {
+          "id": "11-arraylist",
+          "title": "ArrayList",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "12-hashmap",
+          "title": "HashMap",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "13-hashset",
+          "title": "HashSet",
+          "completed": false,
+          "estimatedTime": "45 minutes"
+        },
+        {
+          "id": "14-collections-api",
+          "title": "Collections API",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        }
+      ]
+    },
+    {
+      "name": "Exception Handling",
+      "lessons": [
+        {
+          "id": "15-exceptions",
+          "title": "Exception Handling Basics",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "16-custom-exceptions",
+          "title": "Custom Exceptions",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "17-try-with-resources",
+          "title": "Try-with-Resources",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Generics",
+      "lessons": [
+        {
+          "id": "18-generic-classes",
+          "title": "Generic Classes",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "19-generic-methods",
+          "title": "Generic Methods",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "20-wildcards",
+          "title": "Wildcards and Bounds",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "Functional Programming (Java 8+)",
+      "lessons": [
+        {
+          "id": "21-lambda-expressions",
+          "title": "Lambda Expressions",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "22-streams",
+          "title": "Stream API",
+          "completed": false,
+          "estimatedTime": "2.5 hours"
+        },
+        {
+          "id": "23-optional",
+          "title": "Optional",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "24-method-references",
+          "title": "Method References",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Concurrency",
+      "lessons": [
+        {
+          "id": "25-threads",
+          "title": "Threads",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "26-synchronization",
+          "title": "Synchronization",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "27-executors",
+          "title": "Executor Framework",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "28-completable-future",
+          "title": "CompletableFuture",
+          "completed": false,
+          "estimatedTime": "2.5 hours"
+        },
+        {
+          "id": "29-virtual-threads",
+          "title": "Virtual Threads (Java 21+)",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "I/O and Serialization",
+      "lessons": [
+        {
+          "id": "30-file-io",
+          "title": "File I/O",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "31-nio",
+          "title": "NIO (New I/O)",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "32-serialization",
+          "title": "Serialization",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "lessons": [
+        {
+          "id": "33-junit",
+          "title": "JUnit 5",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "34-mockito",
+          "title": "Mockito",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "Modern Java Features",
+      "lessons": [
+        {
+          "id": "35-records",
+          "title": "Records (Java 14+)",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "36-sealed-classes",
+          "title": "Sealed Classes (Java 17+)",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "37-pattern-matching",
+          "title": "Pattern Matching",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "task-tracker",
+      "title": "Command-Line Task Tracker",
+      "difficulty": "Beginner",
+      "completed": false,
+      "estimatedTime": "4-8 hours"
+    },
+    {
+      "id": "web-server",
+      "title": "Concurrent Web Server",
+      "difficulty": "Intermediate",
+      "completed": false,
+      "estimatedTime": "8-12 hours"
+    },
+    {
+      "id": "database",
+      "title": "Key-Value Database",
+      "difficulty": "Advanced",
+      "completed": false,
+      "estimatedTime": "16-24 hours"
+    },
+    {
+      "id": "compiler",
+      "title": "Simple Language Compiler",
+      "difficulty": "Expert",
+      "completed": false,
+      "estimatedTime": "24-40 hours"
+    }
+  ],
+  "statistics": {
+    "totalLessons": 37,
+    "completedLessons": 0,
+    "totalProjects": 4,
+    "completedProjects": 0,
+    "estimatedTotalTime": "130+ hours"
+  }
+}
