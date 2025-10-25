@@ -1,0 +1,269 @@
+{
+  "language": "Rust",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-15",
+  "categories": [
+    {
+      "name": "Fundamentals",
+      "lessons": [
+        {
+          "id": "01-hello-world",
+          "title": "Hello World",
+          "completed": false,
+          "estimatedTime": "30 minutes"
+        },
+        {
+          "id": "02-variables",
+          "title": "Variables and Mutability",
+          "completed": false,
+          "estimatedTime": "45 minutes"
+        },
+        {
+          "id": "03-data-types",
+          "title": "Data Types",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "04-functions",
+          "title": "Functions",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "05-control-flow",
+          "title": "Control Flow",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Ownership",
+      "lessons": [
+        {
+          "id": "06-ownership",
+          "title": "Understanding Ownership",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "07-references",
+          "title": "References and Borrowing",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "08-slices",
+          "title": "Slices",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Structs and Enums",
+      "lessons": [
+        {
+          "id": "09-structs",
+          "title": "Structs",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "10-enums",
+          "title": "Enums and Pattern Matching",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "11-option-result",
+          "title": "Option and Result",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        }
+      ]
+    },
+    {
+      "name": "Collections",
+      "lessons": [
+        {
+          "id": "12-vectors",
+          "title": "Vectors",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "13-strings",
+          "title": "Strings",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "14-hashmaps",
+          "title": "Hash Maps",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Error Handling",
+      "lessons": [
+        {
+          "id": "15-panic",
+          "title": "Panic and Unwind",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "16-result-type",
+          "title": "Result Type and ? Operator",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "17-custom-errors",
+          "title": "Custom Error Types",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "Traits and Generics",
+      "lessons": [
+        {
+          "id": "18-traits",
+          "title": "Traits",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "19-generics",
+          "title": "Generic Types",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "20-lifetimes",
+          "title": "Lifetimes",
+          "completed": false,
+          "estimatedTime": "3 hours"
+        }
+      ]
+    },
+    {
+      "name": "Testing and Documentation",
+      "lessons": [
+        {
+          "id": "21-unit-tests",
+          "title": "Unit Testing",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "22-integration-tests",
+          "title": "Integration Testing",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "23-documentation",
+          "title": "Documentation Comments",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Concurrency",
+      "lessons": [
+        {
+          "id": "24-threads",
+          "title": "Threads",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "25-message-passing",
+          "title": "Message Passing with Channels",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "26-shared-state",
+          "title": "Shared State with Arc and Mutex",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "27-async-await",
+          "title": "Async/Await",
+          "completed": false,
+          "estimatedTime": "3 hours"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "lessons": [
+        {
+          "id": "28-smart-pointers",
+          "title": "Smart Pointers",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "29-unsafe-rust",
+          "title": "Unsafe Rust",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "30-macros",
+          "title": "Macros",
+          "completed": false,
+          "estimatedTime": "2.5 hours"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "task-tracker",
+      "title": "Command-Line Task Tracker",
+      "difficulty": "Beginner",
+      "completed": false,
+      "estimatedTime": "4-8 hours"
+    },
+    {
+      "id": "web-server",
+      "title": "Concurrent Web Server",
+      "difficulty": "Intermediate",
+      "completed": false,
+      "estimatedTime": "8-12 hours"
+    },
+    {
+      "id": "database",
+      "title": "Key-Value Database",
+      "difficulty": "Advanced",
+      "completed": false,
+      "estimatedTime": "16-24 hours"
+    },
+    {
+      "id": "compiler",
+      "title": "Simple Language Compiler",
+      "difficulty": "Expert",
+      "completed": false,
+      "estimatedTime": "24-40 hours"
+    }
+  ],
+  "statistics": {
+    "totalLessons": 30,
+    "completedLessons": 0,
+    "totalProjects": 4,
+    "completedProjects": 0,
+    "estimatedTotalTime": "120+ hours"
+  }
+}

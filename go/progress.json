@@ -1,0 +1,258 @@
+{
+  "language": "Go",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-15",
+  "categories": [
+    {
+      "name": "Fundamentals",
+      "lessons": [
+        {
+          "id": "01-hello-world",
+          "title": "Hello World",
+          "completed": false,
+          "estimatedTime": "20 minutes"
+        },
+        {
+          "id": "02-variables",
+          "title": "Variables and Constants",
+          "completed": false,
+          "estimatedTime": "30 minutes"
+        },
+        {
+          "id": "03-data-types",
+          "title": "Basic Types",
+          "completed": false,
+          "estimatedTime": "45 minutes"
+        },
+        {
+          "id": "04-functions",
+          "title": "Functions",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "05-control-flow",
+          "title": "Control Structures",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Data Structures",
+      "lessons": [
+        {
+          "id": "06-arrays-slices",
+          "title": "Arrays and Slices",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "07-maps",
+          "title": "Maps",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "08-structs",
+          "title": "Structs",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Methods and Interfaces",
+      "lessons": [
+        {
+          "id": "09-methods",
+          "title": "Methods",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "10-interfaces",
+          "title": "Interfaces",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "11-type-assertions",
+          "title": "Type Assertions and Type Switches",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Error Handling",
+      "lessons": [
+        {
+          "id": "12-errors",
+          "title": "Error Handling",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "13-panic-recover",
+          "title": "Panic and Recover",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "14-custom-errors",
+          "title": "Custom Error Types",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Concurrency",
+      "lessons": [
+        {
+          "id": "15-goroutines",
+          "title": "Goroutines",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "16-channels",
+          "title": "Channels",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "17-select",
+          "title": "Select Statement",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "18-sync-primitives",
+          "title": "Sync Package (Mutex, WaitGroup)",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "19-context",
+          "title": "Context Package",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    },
+    {
+      "name": "Standard Library",
+      "lessons": [
+        {
+          "id": "20-io",
+          "title": "I/O Operations",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "21-json",
+          "title": "JSON Encoding/Decoding",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "22-http",
+          "title": "HTTP Client and Server",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "23-file-ops",
+          "title": "File Operations",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "lessons": [
+        {
+          "id": "24-unit-tests",
+          "title": "Unit Testing",
+          "completed": false,
+          "estimatedTime": "1.5 hours"
+        },
+        {
+          "id": "25-table-tests",
+          "title": "Table-Driven Tests",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        },
+        {
+          "id": "26-benchmarks",
+          "title": "Benchmarking",
+          "completed": false,
+          "estimatedTime": "1 hour"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "lessons": [
+        {
+          "id": "27-generics",
+          "title": "Generics (Go 1.18+)",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "28-reflection",
+          "title": "Reflection",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        },
+        {
+          "id": "29-cgo",
+          "title": "CGo (C Interop)",
+          "completed": false,
+          "estimatedTime": "2 hours"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "task-tracker",
+      "title": "Command-Line Task Tracker",
+      "difficulty": "Beginner",
+      "completed": false,
+      "estimatedTime": "4-8 hours"
+    },
+    {
+      "id": "web-server",
+      "title": "Concurrent Web Server",
+      "difficulty": "Intermediate",
+      "completed": false,
+      "estimatedTime": "8-12 hours"
+    },
+    {
+      "id": "database",
+      "title": "Key-Value Database",
+      "difficulty": "Advanced",
+      "completed": false,
+      "estimatedTime": "16-24 hours"
+    },
+    {
+      "id": "compiler",
+      "title": "Simple Language Compiler",
+      "difficulty": "Expert",
+      "completed": false,
+      "estimatedTime": "24-40 hours"
+    }
+  ],
+  "statistics": {
+    "totalLessons": 29,
+    "completedLessons": 0,
+    "totalProjects": 4,
+    "completedProjects": 0,
+    "estimatedTotalTime": "100+ hours"
+  }
+}

@@ -1,0 +1,100 @@
+name: Rust CI
+
+on:
+  push:
+    branches: [ main, claude/** ]
+    paths:
+      - 'rust/**'
+      - '.github/workflows/rust-ci.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'rust/**'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: Test Rust Examples
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+      with:
+        toolchain: stable
+
+    - name: Check Rust version
+      run: |
+        rustc --version
+        cargo --version
+
+    - name: Build all Rust examples
+      run: |
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Building $dir"
+            cd "$dir"
+            cargo build --verbose
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Run Rust example tests
+      run: |
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Testing $dir"
+            cd "$dir"
+            cargo test --verbose
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Check formatting
+      run: |
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Checking format for $dir"
+            cd "$dir"
+            cargo fmt --all -- --check
+            cd - > /dev/null
+          fi
+        done
+
+    - name: Run clippy
+      run: |
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Running clippy for $dir"
+            cd "$dir"
+            cargo clippy -- -D warnings
+            cd - > /dev/null
+          fi
+        done
+
+  docs:
+    name: Build Rust Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Rust toolchain
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+
+    - name: Build documentation
+      run: |
+        for dir in rust/examples/*/; do
+          if [ -f "$dir/Cargo.toml" ]; then
+            echo "Building docs for $dir"
+            cd "$dir"
+            cargo doc --no-deps
+            cd - > /dev/null
+          fi
+        done
