@@ -36,6 +36,10 @@ Master Java, one of the most popular languages for enterprise applications.
 
 ## 🚀 How to Use This Repository
 
+### Quick Start
+👉 **[Get Started Now](./GETTING_STARTED.md)** - Installation and first steps for all three languages
+
+### Learning Path
 1. **Choose Your Path**: Pick a language that interests you or start with Go (easiest for beginners)
 2. **Follow in Order**: Lessons build on each other - don't skip ahead
 3. **Code Along**: Type every example yourself - don't copy-paste
@@ -84,16 +88,17 @@ Each language directory contains setup instructions for:
 
 ## 🤝 Contributing
 
-Found a typo? Have a better explanation? Contributions are welcome! Please open an issue or pull request.
+Found a typo? Have a better explanation? Want to add more content? Contributions are welcome!
 
-## 📖 Additional Resources
+Please read our **[Contributing Guide](./CONTRIBUTING.md)** to get started.
 
-Each tutorial includes curated links to:
-- Official documentation
-- Community forums
-- Practice platforms
-- Video tutorials
-- Books and articles
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+Special thanks to all contributors who help make programming education accessible to everyone!
 
 ## ⭐ Star This Repository
 
