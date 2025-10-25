@@ -59,7 +59,7 @@ Create the most beginner-friendly programming tutorials that:
 names to values so you can use them later.
 
 **How to use them**:
-```language
+```rust
 let age = 25
 ```
 
