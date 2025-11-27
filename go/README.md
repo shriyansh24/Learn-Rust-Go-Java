@@ -63,9 +63,9 @@ You should see something like: `go version go1.21.0 linux/amd64`
 ### Part 1: Fundamentals
 1. [Hello World - Your First Program](./lessons/01-hello-world.md)
 2. [Variables and Constants](./lessons/02-variables.md)
-3. [Data Types - The Building Blocks](./lessons/03-data-types.md)
-4. [Functions - Organizing Code](./lessons/04-functions.md)
-5. [Control Flow - Making Decisions](./lessons/05-control-flow.md)
+3. [Control Flow - Making Decisions](./lessons/03-control-flow.md)
+4. [Complex Data Types: Arrays, Slices, and Maps](./lessons/04-complex-data-types.md)
+5. [Functions & Packages: Organizing Your Code](./lessons/05-functions.md)
 
 ### Part 2: Data Structures
 6. [Arrays and Slices](./lessons/06-arrays-slices.md)
